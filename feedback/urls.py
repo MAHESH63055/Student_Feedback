@@ -1,0 +1,19 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+
+    path('', views.home, name='home'),
+
+    path(
+        'feedback/',
+        views.feedback_form,
+        name='feedback'
+    ),
+
+    path(
+        'success/',
+        views.success,
+        name='success'
+    ),
+]
